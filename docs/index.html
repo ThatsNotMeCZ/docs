@@ -28,11 +28,27 @@
             font-style: italic;
             margin-bottom: 30px;
         }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .nav-links {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
     </style>
 </head>
 <body>
+    <div class="nav-links">
+        <strong>Privacy Policy</strong> | <a href="terms.html">Terms of Service</a>
+    </div>
+
     <h1>Privacy Policy for Stocked</h1>
-    <p class="last-updated">Last updated: November 27, 2025</p>
+    <p class="last-updated">Last updated: December 1, 2025</p>
 
     <p>This Privacy Policy describes how Stocked ("we", "us", or "our") collects, uses, and discloses your information when you use our mobile application (the "App").</p>
 
@@ -46,25 +62,28 @@
     </ul>
 
     <h3>1.2. Data Storage</h3>
-    <p>Stocked is primarily a local-first application. Your inventory data, shopping lists, and preferences are stored locally on your device using secure storage mechanisms.</p>
+    <p>Stocked uses Supabase, a cloud-based backend service, to store and synchronize your inventory data, shopping lists, and preferences across devices. Your data is stored securely in the cloud.</p>
 
     <h3>1.3. Third-Party Services</h3>
     <p>We use the following third-party services which may collect information:</p>
     <ul>
+        <li><strong>Supabase:</strong> We use Supabase for authentication and data storage. Please refer to <a href="https://supabase.com/privacy">Supabase's Privacy Policy</a>.</li>
         <li><strong>OpenFoodFacts:</strong> We query the OpenFoodFacts database to retrieve product information when you scan a barcode. Please refer to <a href="https://world.openfoodfacts.org/terms-of-use">OpenFoodFacts' Terms of Use</a> and Privacy Policy.</li>
-        <li><strong>Google AdMob:</strong> We use Google AdMob to display advertisements. AdMob may collect and use your device's advertising ID and other data to serve personalized ads. You can manage your ad preferences in your device settings.</li>
+        <li><strong>Google AdMob:</strong> We use Google AdMob to display advertisements. We have configured the App to request <strong>non-personalized ads</strong>. However, AdMob may still collect and use your device's advertising ID and other data for frequency capping, aggregated ad reporting, and to combat fraud and abuse. You can manage your ad preferences in your device settings.</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
     <p>We use the information we collect to:</p>
     <ul>
-        <li>Provide and maintain the App's functionality (e.g., scanning barcodes, managing inventory).</li>
-        <li>Display relevant advertisements.</li>
+        <li>Provide and maintain the App's functionality (e.g., scanning barcodes, managing inventory, syncing data across devices).</li>
+        <li>Facilitate workspace sharing with other users.</li>
+        <li>Display advertisements (non-personalized).</li>
         <li>Improve the App's performance and user experience.</li>
     </ul>
 
     <h2>3. Data Sharing</h2>
-    <p>We do not sell your personal data. We may share data with third-party service providers (like Google AdMob) as described in section 1.3 to facilitate the services they provide.</p>
+    <p>We do not sell your personal data. We may share data with third-party service providers (like Supabase and Google AdMob) as described in section 1.3 to facilitate the services they provide.</p>
+    <p>If you choose to share a workspace with other users, the data within that workspace (inventory items, shopping lists) will be visible to and editable by those users.</p>
 
     <h2>4. Children's Privacy</h2>
     <p>Our App is not intended for use by children under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
